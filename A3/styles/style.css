@@ -1,0 +1,130 @@
+A.green_link {color:green; font-weight:bold;}
+A.green_link:hover {text-decoration: underline; color: green;}
+A.green_link_underline {color:green; text-decoration: underline;}
+A.dumb_link {color:black; font-weight: :bold; text-decoration:none;}
+A.white_link {color:white; text-decoration: none; padding:0; margin:0;}
+
+.alignleft {
+	float: left;
+	margin:0;
+}
+.alignright {
+	float: right;
+	margin:0;
+}
+
+.mainpart {
+	width:70%;
+	float: left;
+	margin:0;
+	padding:0;
+	padding-right: 1cm;
+	background: white;
+}
+
+.sidepart {
+	width:15%;
+	float: right;
+	background: #D7DDD3;
+	padding:1cm;
+}
+
+#wraps{
+	width:1000px;
+    background:white;
+    overflow:auto;
+    margin:auto;
+}
+
+.nav_menu {
+	background:#87BB8F;
+	padding:0.3cm;
+	font-size: 175%
+}
+
+.title_block {
+	color:white;
+	background:#01855E;
+	padding:0.65cm;
+	font-size: 200%
+}
+
+.top_block {
+	color:#5D8671;
+	background: #084645;
+	padding:7px;
+	font-size: 10%
+	margin-left:2cm;
+}
+
+.bottom_block {
+	color:#87BB8F;
+	background:#09402D;
+	padding:0;
+	padding-top: 1cm;
+	padding-bottom: 1cm;
+}
+
+h2,h3,h4 {
+	margin:0;
+	margin-left:2cm;
+	padding:0;
+}
+
+small {
+	margin:0;
+	margin-left:2cm;
+	padding:2;
+}
+
+p {
+	margin-left:2cm;
+}
+
+ul,ol {
+	margin:0;
+	margin-left:3cm;
+	padding:0;
+}
+
+
+blockquote p {
+	display: inline;
+	padding:1;
+}
+
+blockquote {
+	background: #f9f9f9;
+	border-left: 4px solid green;
+	margin-left:3cm;
+	padding: 0.5em 10px;
+	quotes: "\201C""\201D""\2018""\2019";
+}
+
+#clear {
+    clear: both;
+}
+
+#hold{
+    width: 80%;
+    margin: 0px auto;
+}
+.innerHold{
+    float: left;
+    width:33.33333%;
+    /* make sure left/right margins or left/right padding are 0px here
+            - it'll mess with the width otherwise*/
+    margin-left:0px;
+    margin-right:0px;
+    padding-left:0px;
+    padding-right:0px;
+}
+.inner{
+    margin:0px;
+}
+.col1, .col2{
+    margin-right:10px;
+}
+.clear{
+    clear:both;
+}

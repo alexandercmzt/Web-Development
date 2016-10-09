@@ -1,6 +1,24 @@
+var state, ctx;
+state = "resetted"
+ctx = document.getElementById("canvas").getContext("2d");
+
+function rotatePic() {
+	if (state == "house") {
+		drawSun();
+		state = "sun";
+	}
+	else if (state == "sun") {
+		drawReset();
+		state = "resetted";
+	}
+	else if (state == "resetted") {
+		drawHouse();
+		state = "house";
+	}
+}
+
 function drawHouse() {
-	var canvas = document.getElementByID("theCanvas")
-	var ctx = canvas.getContext("2d");
+	ctx.beginPath();
 	ctx.moveTo(25,275);
 	ctx.lineTo(25,200);
 	ctx.moveTo(75,275);
@@ -17,8 +35,7 @@ function drawHouse() {
 }
 
 function drawSun() {
-	var canvas = document.getElementByID("theCanvas")
-	var ctx = canvas.getContext("2d");
+	ctx.beginPath();
 	ctx.moveTo(300,75);
 	ctx.beginPath();
 	ctx.arc(300,75,40,0,2*Math.PI);
@@ -37,10 +54,9 @@ function drawSun() {
 	ctx.lineTo(250,27);
 	ctx.moveTo(327,47);
 	ctx.lineTo(347,27);
+	ctx.stroke();
 }
 
 function drawReset() {
-	var canvas = document.getElementByID("theCanvas")
-	var ctx = canvas.getContext("2d");
-	ctx.clearRect(0, 0, canvas.width, canvas.height);
+	ctx.clearRect(0, 0, 400, 300);
 }

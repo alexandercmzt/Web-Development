@@ -14,7 +14,7 @@ function send(){
     json_object["name"] = name.value;
     var value = JSON.stringify(json_object)
     var http = new XMLHttpRequest();
-    var url = "./cgi-bin/server.cgi";
+    var url = "./index.php";
     http.open("POST", url, true);
     http.setRequestHeader("Content-type", "application/json;charset=UTF-8");
     http.send(value);
